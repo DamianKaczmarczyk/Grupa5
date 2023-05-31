@@ -5,7 +5,7 @@
   "homepage": "https://DamianKaczmarczyk.github.io/Grupa5",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Grupa"
+    "build": "parcel build src/*.html --public-url /Grupa5/"
   },
   "repository": {
     "type": "git",
