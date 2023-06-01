@@ -63,7 +63,7 @@
   &__label {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     font-family: $main-font;
     font-weight: 500;
     font-size: 10px;
@@ -72,6 +72,20 @@
     align-items: start;
     margin: 0 18px 18px 18px;
     gap: 8px;
+  }
+  &__icon--correct {
+    position: absolute;
+    right: 16px;
+    bottom: 7px;
+    fill: $correct;
+    display: none;
+  }
+  &__icon--error {
+    position: absolute;
+    right: 16px;
+    bottom: 7px;
+    fill: $invalid;
+    display: none;
   }
   &__input {
     border: 1px solid $input-border-normal;
@@ -85,6 +99,32 @@
     }
     &:focus-visible {
       outline: none;
+    }
+    &:not(:placeholder-shown):required:valid {
+      border-color: $correct;
+    }
+    &:not(:placeholder-shown):required:valid + .modal-follow__icon--correct {
+      display: flex;
+    }
+    &:not(:placeholder-shown):required:valid
+      + .modal-follow__icon--correct
+      + .modal-follow__icon--error
+      + .modal-follow__text--correct {
+      color: $correct;
+    }
+    &:not(:placeholder-shown):required:invalid {
+      border-color: $invalid;
+    }
+    &:not(:placeholder-shown):required:invalid
+      + .modal-follow__icon--correct
+      + .modal-follow__icon--error {
+      display: flex;
+    }
+    &:not(:placeholder-shown):required:invalid
+      + .modal-follow__icon--correct
+      + .modal-follow__icon--error
+      + .modal-follow__text--error {
+      color: $invalid;
     }
   }
   &__button {
@@ -187,5 +227,15 @@
 @media (min-width: 1280px) {
   .modal-follow__dt {
     width: 432px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-follow__icon--correct {
+    bottom: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-follow__icon--error {
+    bottom: 14px;
   }
 }

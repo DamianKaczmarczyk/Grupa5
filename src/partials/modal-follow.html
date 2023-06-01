@@ -62,9 +62,21 @@
             Be the first to get exclusive offers and the latest news on our product directly in your
             box.
           </p>
-          <label class="modal-follow__label"
-            >Email
-            <input class="modal-follow__input" type="email" name="email" placeholder="Your email" />
+          <label class="modal-follow__label">
+            <input
+              class="modal-follow__input"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <svg class="modal-follow__icon--correct" width="20" height="20">
+              <use href="/Grupa5/src/images/icons.svg#icon-correct-logo"></use>
+            </svg>
+            <svg class="modal-follow__icon--error" width="20" height="20">
+              <use href="/Grupa5/src/images/icons.svg#icon-error-logo"></use>
+            </svg>
+            <span class="modal-follow__text--correct modal-follow__text--error">Email</span>
           </label>
           <button class="modal-follow__button" type="submit">Subscribe</button>
         </div>
