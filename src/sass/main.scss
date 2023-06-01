@@ -19,4 +19,7 @@
 @import './partials/mobile-menu';
 @import './partials/store';
 @import './partials/vars';
-@import './partials/example';
+@use './mixins' as *;
+@import './vars';
+@import './global';
+@import './footer';
