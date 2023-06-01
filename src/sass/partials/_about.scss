@@ -1,15 +1,5 @@
-.container {
-  box-sizing: border-box;
-  // margin-right: 16px;
-  // margin-left: 16px;
-}
-
 @media screen and (max-width: 480px) {
-  .container {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  .about__title {
+  &__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -18,12 +8,13 @@
     color: #000000;
     text-transform: uppercase;
   }
-  .about__wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     margin-right: 16px;
+    margin-right: 16px;
   }
-  .about__text {
+  &__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -34,23 +25,13 @@
     margin-top: 32px;
     margin-bottom: 16px;
   }
-  body picture {
-    max-width: 100%;
-    object-fit: cover;
-    align-items: center;
-    margin-right: 16px;
-  }
 }
 // @media screen and (max-width: 767px) {
 
 //   }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .container {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .about__title {
+  &__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -59,12 +40,12 @@
     color: #000000;
     text-transform: uppercase;
   }
-  .about__wrapper {
+  &__wrapper {
     display: flex;
     gap: 54px;
     align-items: center;
   }
-  .about__text {
+  &__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -75,11 +56,7 @@
   }
 }
 @media screen and (min-width: 769px) {
-  .container {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .about__title {
+  &__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -88,12 +65,12 @@
     color: #000000;
     text-transform: uppercase;
   }
-  .about__wrapper {
+  &__wrapper {
     display: flex;
     gap: 90px;
     align-items: center;
   }
-  .about__text {
+  &__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
