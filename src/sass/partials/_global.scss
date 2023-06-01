@@ -60,3 +60,9 @@ input {
   border: none;
   outline: none;
 }
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
