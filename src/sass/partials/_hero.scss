@@ -6,6 +6,7 @@
     justify-content: center;
     }
     &__title{
+        display:none;
         font-weight: 400;
         font-size: 52px;
         font-family: $main-font;
@@ -15,8 +16,24 @@
             font-size: 120px;
         }
         @include desktop {
+            display:block;
             font-size: 160px;
         }
+    }
+    &__stitle{
+        display:flex;
+        font-weight: 400;
+        font-size: 52px;
+        font-family: $main-font;
+        position: absolute;
+        bottom: 0px;
+        @include tablet {
+            font-size: 120px;
+        }
+        @include desktop {
+            display:none;
+        }
+
     }
     &__mintitle{
         font-family: $main-font;
