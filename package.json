@@ -17,10 +17,6 @@
   "bugs": {
     "url": "https://github.com/migace/parcel-project-template-pl-main/issues"
   },
-  "homepage": "https://szczepanskimichal.github.io/Grupa5",
-  "scripts": {
-    "build": "parcel build src/*.html --public-url /Grupa5/"
-  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.3",

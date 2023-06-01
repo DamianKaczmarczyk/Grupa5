@@ -1,3 +1,103 @@
-body {
-  background-color: red;
+.container {
+  box-sizing: border-box;
+  // margin-right: 16px;
+  // margin-left: 16px;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: orange;
+
+    .container {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .about__title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+      color: #000000;
+      text-transform: uppercase;
+    }
+    .about__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #000000;
+      text-overflow: clip;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+  }
+}
+// @media screen and (max-width: 767px) {
+
+//   }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-color: aqua;
+  }
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .about__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .about__wrapper {
+    display: flex;
+    gap: 54px;
+    align-items: center;
+  }
+  .about__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+    text-overflow: clip;
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-color: darkolivegreen;
+  }
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .about__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .about__wrapper {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+  }
+  .about__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+    text-overflow: clip;
+  }
 }
