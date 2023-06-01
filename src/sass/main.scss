@@ -7,11 +7,11 @@
 //@import './example';
 @use "./partials/mixins" as *;
 @import "./partials/vars";
+@import "./partials/global";
 @import "./partials/about";
 @import "./partials/blog";
 @import "./partials/delivery";
 @import "./partials/footer";
-@import "./partials/global";
 @import "./partials/header";
 @import "./partials/hero";
 @import "./partials/modal-contact-us";
