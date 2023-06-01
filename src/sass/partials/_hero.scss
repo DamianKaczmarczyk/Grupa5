@@ -3,17 +3,13 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     }
     &__title{
         font-weight: 400;
         font-size: 52px;
-        line-height: 63px;
         font-family: $main-font;
         position: absolute;
-        text-align: center;
-        left: 0px;
         bottom: 0px;
         @include tablet {
             font-size: 120px;
