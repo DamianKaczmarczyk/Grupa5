@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 @media screen and (max-width: 480px) {
   .about {
     &__title {
@@ -28,6 +31,41 @@
     }
   }
 }
+// @media screen and (min-width: 481px) {
+//   .about {
+//     background-color: aqua;
+//     &__title {
+//       font-family: 'Montserrat';
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 44px;
+//       line-height: 1.2;
+//       color: #000000;
+//       text-transform: uppercase;
+//       margin-right: 50px;
+//     }
+//     &__wrapper {
+//       display: flex;
+//       gap: 90px;
+//       align-items: center;
+//     }
+//     &__text {
+//       font-family: 'Montserrat';
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 20px;
+//       line-height: 1.2;
+//       color: #000000;
+//       text-overflow: clip;
+//       width: 322px;
+//       height: 168px;
+//     }
+//     &__picture {
+//       width: 344px;
+//       height: 217px;
+//     }
+//   }
+// }
 // @media screen and (max-width: 767px) {
 
 //   }
@@ -57,13 +95,14 @@
       color: #000000;
       text-overflow: clip;
     }
-    &__picture {
+    &__picture img {
       max-width: 288px;
       max-height: 178px;
     }
   }
 }
-@media screen and (min-width: 481px) {
+
+@media screen and (min-width: 769px) {
   .about {
     &__title {
       font-family: 'Montserrat';
@@ -73,6 +112,7 @@
       line-height: 1.2;
       color: #000000;
       text-transform: uppercase;
+      margin-bottom: 120px;
     }
     &__wrapper {
       display: flex;
@@ -87,38 +127,8 @@
       line-height: 1.2;
       color: #000000;
       text-overflow: clip;
-    }
-    &__picture {
-      width: 344px;
-      height: 217px;
+      margin: 0;
+      padding: 0;
     }
   }
 }
-
-// @media screen and (min-width: 769px) {
-//   .about {
-//     &__title {
-//       font-family: 'Montserrat';
-//       font-style: normal;
-//       font-weight: 700;
-//       font-size: 44px;
-//       line-height: 1.2;
-//       color: #000000;
-//       text-transform: uppercase;
-//     }
-//     &__wrapper {
-//       display: flex;
-//       gap: 90px;
-//       align-items: center;
-//     }
-//     &__text {
-//       font-family: 'Montserrat';
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 20px;
-//       line-height: 1.2;
-//       color: #000000;
-//       text-overflow: clip;
-//     }
-//   }
-// }
