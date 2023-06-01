@@ -1,0 +1,54 @@
+.store{
+        
+    &__title{
+        display:flex;
+        align-items: center;
+        gap:14px;
+    }
+       
+        &__card{
+            display:flex;
+        }
+        
+        &__item__price        {display: block;
+            font-size: 12px;
+            font-family: $main-font;
+            line-height: 1.22;
+            text-align: left;
+            color: rbga(255, 255, 255, 0.6);
+    font-weight: 600;
+    margin-bottom: 0;
+    @include tablet{
+        font-size: 29px;
+    }
+       @include desktop{
+        font-size: 34px;
+       } 
+        }
+      
+        &__title__item{
+            display: block;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 1.22;
+            text-align: left;
+            margin: 12px 0 6px;
+    @include tablet{
+        font-size: 32px;
+    }
+       @include desktop{
+        font-size: 36px;
+       } 
+        }
+    
+        &__list{
+            list-style: none;
+            display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+        }
+    }
