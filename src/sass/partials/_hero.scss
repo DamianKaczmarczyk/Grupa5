@@ -5,7 +5,7 @@
     position: relative;
     justify-content: center;
     width:288px;
-    height: 330px;
+    height: 340px;
     @include tablet {
         width:720px;
         height: 815px;
@@ -26,7 +26,7 @@
             font-size: 120px;
         }
         @include desktop {
-            display:block;
+            display: block;
             font-size: 160px;
         }
     }
