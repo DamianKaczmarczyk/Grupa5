@@ -81,9 +81,11 @@
         align-items: center;
             @include tablet{
                 font-size: 32px;
+                gap:8px;
                 }
             @include desktop{
                 font-size: 36px;
+                gap: 16px;
                 } 
             }
                

@@ -12,6 +12,7 @@
     font-family: $main-font;
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 32px;
     @include tablet{
         width: 280px;
         height: 64px;
