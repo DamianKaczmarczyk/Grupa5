@@ -8,7 +8,8 @@
   &__box {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 44px;
     padding: 0;
     list-style: none;
   }
@@ -46,35 +47,98 @@
   }
   &__item {
     color: $color-light;
-    flex-basis: calc((100% - 48px) / 2);
+    &--transfer {
+      display: flex;
+    }
+  }
+  &__worktime-item {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  @include tablet {
+    &__worktime-item {
+      font-size: 16px;
+    }
+  }
+  @include desktop {
+    &__worktime-item {
+      font-size: 16px;
+    }
   }
   &__title {
+    font-size: 18px;
     font-weight: 700;
-    font-size: 20px;
     margin-bottom: 18px;
   }
+  @include tablet {
+    &__item {
+      &--transfer {
+        display: inline-flex;
+      }
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+  @include desktop {
+    &__item {
+      &--transfer {
+        display: inline-flex;
+      }
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
   &__list {
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     color: $color-light;
+    width: 128px;
+  }
+  @include tablet {
+    &__list {
+      font-size: 16px;
+      width: auto;
+    }
+  }
+  @include desktop {
+    &__list {
+      font-size: 16px;
+      width: auto;
+    }
   }
   &__link {
     margin-top: 12px;
     list-style: none;
   }
   &__socials {
-    display: block;
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    margin-left: 32px;
+    margin-right: 32px;
     &--light {
       fill: $color-light;
+      margin-right: 24px;
       margin-bottom: 23px;
+    }
+  }
+  @include tablet {
+    &__socials {
+      flex-direction: column;
+      margin-left: 44px;
+      margin-right: 0;
+    }
+  }
+  @include desktop {
+    &__socials {
+      flex-direction: column;
+      margin-left: 122px;
+      margin-right: 0;
     }
   }
 }
 .footer a {
-  color: $color-light;
-}
-.addr__map {
   color: $color-light;
 }
