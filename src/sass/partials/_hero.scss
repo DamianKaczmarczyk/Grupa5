@@ -4,6 +4,16 @@
     align-items: center;
     position: relative;
     justify-content: center;
+    width:288px;
+    height: 330px;
+    @include tablet {
+        width:720px;
+        height: 815px;
+    }
+    @include desktop {
+        width:1232px;
+        height: 785px;
+    }
     }
     &__title{
         display:none;
