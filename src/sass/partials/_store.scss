@@ -71,6 +71,7 @@
       
     &__title__item{
         display: flex;
+        white-space: nowrap;
         font-style: normal;
         font-weight: 500 ;
         font-family: $main-font;
