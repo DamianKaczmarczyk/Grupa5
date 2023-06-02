@@ -1,5 +1,4 @@
 .about {
-  display: flex;
   &__title {
     font-weight: 700;
     font-size: 24px;
@@ -9,50 +8,57 @@
     @include tablet {
       &__title {
         font-size: 44px;
+        margin-bottom: 120px;
       }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include tablet {
+      gap: 54px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    @include desktop {
+      gap: 90px;
     }
   }
   &__text {
     font-size: 16px;
     line-height: 1.2;
     max-width: 288px;
-  }
-  &__picture {
-    margin-top: 16px;
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
-
     @include tablet {
-      gap: 54px;
+      font-size: 20px;
     }
     @include desktop {
-      gap: 90px;
+      font-size: 22px;
     }
   }
 }
 
-// .about__title subtitle::after {
-//   @include tablet {
-//     content: '';
-//     width: 100%;
-//     height: 1px;
-//     background-color: $color-dark;
-//     display: inline-block;
-//     padding-left: 8px;
-//   }
-//   @include desktop {
-//     content: '';
-//     width: 100%;
-//     height: 1px;
-//     background-color: $color-dark;
-//     display: inline-block;
-//     padding-left: 16px;
-//   }
-// }
+.about__title subtitle::after {
+  @include tablet {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $color-dark;
+    display: inline-block;
+    padding-left: 8px;
+  }
+  @include desktop {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $color-dark;
+    display: inline-block;
+    padding-left: 16px;
+  }
+}
 
 // @media screen and (max-width: 766px) {
 //   .about {
@@ -137,4 +143,4 @@
 //       line-height: 1.2;
 //     }
 //   }
-// }
+//
