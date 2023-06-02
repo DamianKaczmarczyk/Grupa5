@@ -93,7 +93,7 @@
     font-size: 12px;
     line-height: 1.25;
     &:hover {
-      // border-color: $input-border-hover;
+       //border-color: $input-border-hover;
     }
     &:focus-visible {
       outline: none;
@@ -138,10 +138,10 @@
     align-self: center;
     color: $color-light;
     &:hover {
-      // background-color: $button-hover;
+       background-color: $button-hover;
     }
     &:focus {
-      // background-color: $button-focus;
+       background-color: $button-focus;
     }
   }
 }
