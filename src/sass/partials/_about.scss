@@ -79,28 +79,23 @@
     }
   }
 }
-@media screen and (min-width: 1024px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-  }
-
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   .about {
-    &__title {
-      line-height: 1.2;
-      text-overflow: clip;
-      font-size: 20px;
+    font-size: 22px;
+    .container {
+      // display: flex;
+      justify-content: center;
+    }
+    &__tille {
       margin-bottom: 56px;
-      text-transform: uppercase;
     }
     &__wrapper {
       gap: 90px;
       display: flex;
-      align-items: center;
+      justify-content: center;
     }
     &__text {
-      font-size: 20px;
+      font-size: 22px;
       line-height: 1.2;
     }
   }
