@@ -1,50 +1,80 @@
 .footer {
-    font-family: $secondary-font;
-    line-height: 1.2;
-    color: $color-light;
-    background-color: $color-dark;
-    padding-top: 72px;
-    padding-bottom: 72px;
+  font-family: $secondary-font;
+  line-height: 1.2;
+  color: $color-light;
+  background-color: $color-dark;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__box {
-      display: flex;
-      flex-wrap: wrap;
-      // gap: 10px;
+      flex-wrap: nowrap;
+      gap: 44px;
       padding: 0;
       list-style: none;
     }
-    &__item {
-      color: $color-light;
-      /*  Set the width of the elements  */
-      flex-basis: calc((100% - 96px) / 5);
-      padding: 10px;
-    }
-    &__logo {
-      display: none;
-    }
-    &__title {
-      font-weight: 700;
-      font-size: 20px;
-      margin-bottom: 18px;
-    }
-    @include desktop {
-      &__logo {
-        display: block;
-        &--light {
-          fill: $svg-light;
-        }
-      }
-    }
   }
-  .nav-list {
-    font-style: normal;
-    font-weight: 500;
-    color: $color-light;
-    &__link {
-      margin-top: 12px;
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    &__box {
+      flex-wrap: nowrap;
+      gap: 96px;
+      padding: 0;
       list-style: none;
     }
   }
-  .addr__map {
+  &__logo {
+    display: none;
+  }
+  @include desktop {
+    &__logo {
+      display: block;
+      margin-right: 112px;
+      &--light {
+        fill: $svg-light;
+      }
+    }
+  }
+  &__item {
+    color: $color-light;
+    flex-basis: calc((100% - 48px) / 2);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  &__list {
+    font-style: normal;
+    font-weight: 500;
     color: $color-light;
   }
-  
+  &__link {
+    margin-top: 12px;
+    list-style: none;
+  }
+  &__socials {
+    display: block;
+    list-style: none;
+    margin-left: 32px;
+    &--light {
+      fill: $color-light;
+      margin-bottom: 23px;
+    }
+  }
+}
+.footer a {
+  color: $color-light;
+}
+.addr__map {
+  color: $color-light;
+}

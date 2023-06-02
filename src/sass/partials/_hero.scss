@@ -3,24 +3,47 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    width:288px;
+    height: 340px;
+    @include tablet {
+        width:720px;
+        height: 815px;
+    }
+    @include desktop {
+        width:1232px;
+        height: 785px;
+    }
     }
     &__title{
+        display:none;
         font-weight: 400;
         font-size: 52px;
-        line-height: 63px;
         font-family: $main-font;
         position: absolute;
-        text-align: center;
-        left: 0px;
         bottom: 0px;
         @include tablet {
             font-size: 120px;
         }
         @include desktop {
+            display: block;
             font-size: 160px;
         }
+    }
+    &__stitle{
+        display:flex;
+        font-weight: 400;
+        font-size: 52px;
+        font-family: $main-font;
+        position: absolute;
+        bottom: 0px;
+        @include tablet {
+            font-size: 120px;
+        }
+        @include desktop {
+            display:none;
+        }
+
     }
     &__mintitle{
         font-family: $main-font;
