@@ -11,7 +11,16 @@
         font-size: 44px;
       }
     }
-    
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      margin-left: 16px;
+      margin-right: 16px;
+      @include tablet {
+        gap: 54px;
+      }
+      @include desktop {
+        gap: 90px;
       }
     }
   }
