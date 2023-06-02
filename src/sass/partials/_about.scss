@@ -79,3 +79,29 @@
     }
   }
 }
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+  }
+
+  .about {
+    &__title {
+      line-height: 1.2;
+      text-overflow: clip;
+      font-size: 20px;
+      margin-bottom: 56px;
+      text-transform: uppercase;
+    }
+    &__wrapper {
+      gap: 90px;
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
