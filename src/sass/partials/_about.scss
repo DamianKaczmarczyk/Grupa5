@@ -33,9 +33,13 @@
       display: flex;
       justify-content: center;
     }
+    &__picture {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
-@include tablet {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .about {
     &__title {
       font-family: 'Montserrat';
@@ -109,8 +113,7 @@
 
 //   }
 
-// @media screen and (min-width: 481px) and (max-width: 768px)
-@include tablet {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .about {
     &__title {
       font-family: 'Montserrat';
@@ -145,7 +148,7 @@
   }
 }
 
-@include desktop {
+@media screen and (min-width: 769px) {
   .about {
     &__title {
       font-family: 'Montserrat';
