@@ -11,21 +11,31 @@
         font-size: 44px;
       }
     }
-    &__wrapper {
-      display: flex;
-      align-items: center;
-      margin-left: 16px;
-      margin-right: 16px;
-      @include tablet {
-        gap: 54px;
-      }
-      @include desktop {
-        gap: 90px;
-      }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+    max-width: 288px;
+  }
+  &__picture {
+    margin-top: 16px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include tablet {
+      gap: 54px;
+    }
+    @include desktop {
+      gap: 90px;
     }
   }
 }
-// .about__title__subtitle::after {
+
+// .about__title subtitle::after {
 //   @include tablet {
 //     content: '';
 //     width: 100%;
