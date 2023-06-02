@@ -1,5 +1,9 @@
 .header {
-  position: sticky;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: $color-light;
+  z-index: 20;
   &__wrapper {
     display: flex;
     justify-content: space-between;
