@@ -59,3 +59,24 @@
     }
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about {
+    &__title {
+      line-height: 1.2;
+      text-overflow: clip;
+      font-size: 20px;
+      margin-bottom: 56px;
+      text-transform: uppercase;
+    }
+    &__wrapper {
+      gap: 54px;
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 1.2;
+      max-width: 300px;
+    }
+  }
+}
