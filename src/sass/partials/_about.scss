@@ -1,3 +1,6 @@
+.container {
+  margin: 0;
+}
 .about {
   @media screen and (max-width: 480px) {
     &__title {
@@ -44,8 +47,6 @@
       line-height: 1.2;
       color: #000000;
       text-transform: uppercase;
-      display: flex;
-      align-items: center;
     }
     &__wrapper {
       gap: 54px;
@@ -80,8 +81,9 @@
     }
     &__wrapper {
       display: flex;
-      // gap: 90px;
+      gap: 90px;
       align-items: center;
+      justify-content: center;
     }
     &__text {
       font-family: 'Montserrat';
@@ -91,7 +93,6 @@
       line-height: 1.2;
       color: #000000;
       text-overflow: clip;
-      margin: 90px;
     }
   }
 }
