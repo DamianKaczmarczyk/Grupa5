@@ -1,0 +1,28 @@
+.nav {
+  display: none;
+
+  a {
+    &:hover,
+    &:focus,
+    &:visited {
+      color: $color-dark;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  @include desktop {
+    column-gap: 48px;
+  }
+  &__link {
+    font-size: 20px;
+    // &:hover,
+    // &:focus,
+    // &:visited {
+    //   color: $color-dark;
+    // }
+  }
+}
