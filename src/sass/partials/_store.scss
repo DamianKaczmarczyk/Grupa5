@@ -1,13 +1,17 @@
 .container__store{
+    position: relative;
     display: flex;
     align-items: center;
 }
 
 .store{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+       
     &__item{
+        position: relative;
         max-width: 136px;
             @include tablet{
                 max-width: 345px;
@@ -21,8 +25,7 @@
         display:flex;
         align-items: center;
         gap:14px;
-        font-size: 24px;
-        
+        font-size: 24px;    
         padding-bottom: 32px;
        
             @include tablet{
@@ -47,7 +50,6 @@
             }
         
     &__item__price{
-
         display: block;
         font-style: normal;
         font-weight: 600;
@@ -83,12 +85,10 @@
                 font-size: 36px;
                 } 
             }
-            &__name{
-                display: inline;
-            }
-        
+               
 
     &__list{
+        position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -128,3 +128,16 @@
 }
 }
 }
+/*
+.scale{
+    position: relative;
+   display: inline-block;
+transition-property: transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(.075,.82,.165,1)
+}
+.store__img:active
+.store__img:hover{
+    transform: scale(1.2);
+}
+*/
