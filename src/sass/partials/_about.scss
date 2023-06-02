@@ -14,15 +14,12 @@
   }
   &__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 16px;
-    margin-right: 16px;
-
+    flex-direction: column;
     @include tablet {
       gap: 54px;
       margin-left: 24px;
       margin-right: 24px;
+      flex-direction: row;
     }
     @include desktop {
       gap: 90px;
@@ -31,12 +28,15 @@
   &__text {
     font-size: 16px;
     line-height: 1.2;
-    max-width: 288px;
+    margin-bottom: 16px;
+
     @include tablet {
       font-size: 20px;
+      align-items: center;
     }
     @include desktop {
       font-size: 22px;
+      align-items: center;
     }
   }
 }
