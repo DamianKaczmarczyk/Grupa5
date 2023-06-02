@@ -44,22 +44,4 @@
       justify-content: center;
     }
   }
-  .about__title subtitle::after {
-    @include tablet {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: $color-dark;
-      display: inline-block;
-      padding-left: 8px;
-    }
-    @include desktop {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: $color-dark;
-      display: inline-block;
-      padding-left: 16px;
-    }
-  }
 }
