@@ -15,11 +15,12 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     @include tablet {
+      flex-direction: row;
       gap: 54px;
       margin-left: 24px;
       margin-right: 24px;
-      flex-direction: row;
     }
     @include desktop {
       gap: 90px;
@@ -29,118 +30,36 @@
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 16px;
-
+    display: flex;
     @include tablet {
       font-size: 20px;
       align-items: center;
+      width: 322px;
+      height: 168px;
     }
+
     @include desktop {
       font-size: 22px;
       align-items: center;
+      justify-content: center;
+    }
+  }
+  .about__title subtitle::after {
+    @include tablet {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $color-dark;
+      display: inline-block;
+      padding-left: 8px;
+    }
+    @include desktop {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $color-dark;
+      display: inline-block;
+      padding-left: 16px;
     }
   }
 }
-
-.about__title subtitle::after {
-  @include tablet {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: $color-dark;
-    display: inline-block;
-    padding-left: 8px;
-  }
-  @include desktop {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: $color-dark;
-    display: inline-block;
-    padding-left: 16px;
-  }
-}
-
-// @media screen and (max-width: 766px) {
-//   .about {
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.2;
-//     text-overflow: clip;
-//     font-family: $main-font;
-//     &__title {
-//       font-weight: 700;
-//       font-size: 24px;
-//       text-transform: uppercase;
-//     }
-//     &__wrapper {
-//       display: flex;
-//       flex-direction: column;
-//       margin-right: 16px;
-//       margin-right: 16px;
-//     }
-//     &__text {
-//       font-size: 16px;
-//       margin-top: 32px;
-//       margin-bottom: 16px;
-//     }
-//     &__picture {
-//       display: flex;
-//       justify-content: center;
-//     }
-//   }
-// }
-// @include tablet {
-//   .about {
-//     &__title {
-//       line-height: 1.2;
-//       text-overflow: clip;
-//       font-size: 20px;
-//       margin-bottom: 56px;
-//       text-transform: uppercase;
-//     }
-//     &__wrapper {
-//       gap: 54px;
-//       display: flex;
-//       align-items: center;
-//     }
-//     &__text {
-//       font-size: 20px;
-//       line-height: 1.2;
-//       max-width: 300px;
-//     }
-//   }
-// }
-// @include desktop {
-//   .about {
-//     font-size: 22px;
-//     &__wraper {
-//       display: flex;
-//       justify-content: space-between;
-//       gap: 90px;
-//     }
-//     &__text {
-//       width: 510px;
-//     }
-//   }
-// }
-// @media screen and (min-width: 769px) and (max-width: 1280px) {
-//   .about {
-//     font-size: 22px;
-//     .container {
-//       // display: flex;
-//       justify-content: center;
-//     }
-//     &__tille {
-//       margin-bottom: 56px;
-//     }
-//     &__wrapper {
-//       gap: 90px;
-//       display: flex;
-//       justify-content: center;
-//     }
-//     &__text {
-//       font-size: 22px;
-//       line-height: 1.2;
-//     }
-//   }
-//
