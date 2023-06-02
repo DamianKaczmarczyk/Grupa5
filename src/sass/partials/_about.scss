@@ -1,10 +1,11 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 766px) {
   .about {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     text-overflow: clip;
     font-family: $main-font;
+    margin-left: 16px;
     &__title {
       font-weight: 700;
       font-size: 24px;
@@ -59,7 +60,7 @@
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 766px) {
   .about {
     &__title {
       line-height: 1.2;
@@ -79,7 +80,7 @@
     }
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 767px) and (max-width: 1280px) {
   .about {
     font-size: 22px;
     .container {
