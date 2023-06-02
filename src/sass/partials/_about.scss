@@ -1,19 +1,14 @@
 @media screen and (max-width: 480px) {
   .about {
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.2;
-    color: #000000;
-    text-transform: uppercase;
-    &__test {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.2;
-      color: #000000;
-      text-overflow: clip;
+    text-overflow: clip;
+    font-family: $main-font;
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
     }
     &__wrapper {
       display: flex;
@@ -30,19 +25,37 @@
       display: flex;
       justify-content: center;
     }
-    @include tablet {
-      .about {
-        &__wrapper {
-          gap: 54px;
-          display: flex;
-          align-items: center;
-        }
-        &__text {
-          font-size: 20px;
-          line-height: 1.2;
-          width: 322px;
-        }
-      }
+  }
+}
+@include tablet {
+  .about {
+    &__title {
+      line-height: 1.2;
+      text-overflow: clip;
+      font-size: 20px;
+      margin-bottom: 56px;
+      text-transform: uppercase;
+    }
+    &__wrapper {
+      gap: 54px;
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 1.2;
+      width: 300px;
+    }
+  }
+}
+@include desktop {
+  .about {
+    font-size: 22px;
+    &__wrapper {
+      gap: 90px;
+    }
+    &__text {
+      width: 510px;
     }
   }
 }
