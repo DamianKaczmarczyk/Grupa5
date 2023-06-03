@@ -1,5 +1,7 @@
 .backdrop {
   position: fixed;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
   right: 0;
@@ -16,6 +18,11 @@
   left: 35%;
   top: 25%;
   padding: 28px 16px;
+  @include desktop {
+    height: 357px;
+    width: 272px;
+    padding: 48px 32px;
+  }
   &__closing {
     position: absolute;
     display: flex;
@@ -26,10 +33,18 @@
     border: none;
     background: $color-light;
     padding: 6px;
+    @include desktop {
+      top: 28px;
+      right: 28px;
+    }
   }
   &__icon {
     width: 12px;
     height: 12px;
+    @include desktop {
+      width: 16px;
+      height: 16px;
+    }
   }
   &__header {
     font-size: 20px;
@@ -38,6 +53,10 @@
     letter-spacing: 0.03em;
     text-align: left;
     padding-bottom: 14px;
+    @include desktop {
+      font-size: 32px;
+      padding-bottom: 24px;
+    }
   }
   &__text {
     font-size: 12px;
@@ -47,6 +66,9 @@
     letter-spacing: 0em;
     text-align: left;
     color: $modal-text;
+    @include desktop {
+      font-size: 12px;
+    }
   }
   &__label,
   &__textarea {
@@ -59,6 +81,10 @@
     padding-top: 14px;
     position: relative;
     color: $modal-text;
+    @include desktop {
+      font-size: 14px;
+      padding-top: 24px;
+    }
   }
   &__label--padding {
     padding-bottom: 24px;
@@ -95,10 +121,16 @@
     font-weight: 600;
     line-height: 100%;
     background: $color-btn;
+    @include desktop {
+      font-size: 14px;
+    }
+    @include desktop {
+      padding-bottom: 24px;
+    }
   }
 }
 
-@include desktop {
+/* @include desktop {
   .modal {
     height: 357px;
     width: 272px;
@@ -130,4 +162,4 @@
       padding-bottom: 24px;
     }
   }
-}
+} */
