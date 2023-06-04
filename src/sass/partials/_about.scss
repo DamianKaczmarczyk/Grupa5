@@ -1,18 +1,24 @@
 .about {
   &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 700;
     font-size: 24px;
+    line-height: 1.2;
     text-transform: uppercase;
-    margin-bottom: 32px;
     align-items: center;
     gap: 14px;
     display: flex;
-
-    @include tablet {
-      &__title {
-        font-size: 44px;
-        margin-bottom: 120px;
-      }
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    &__title {
+      font-weight: 700;
+      font-size: 44px;
+      margin-bottom: 56px;
+      align-items: center;
+      display: flex;
+      margin-bottom: 56px;
     }
   }
   &__wrapper {
@@ -21,11 +27,16 @@
     align-items: center;
     justify-content: center;
     @include tablet {
+      display: flex;
       flex-direction: row;
       gap: 54px;
-      margin-left: 24px;
-      margin-right: 24px;
       justify-content: space-between;
+      align-items: center;
+    }
+    @media screen and (min-width: 426px) and (max-width: 767px) {
+      display: flex;
+      flex-direction: row;
+      gap: 54px;
     }
     @include desktop {
       gap: 90px;
@@ -36,16 +47,19 @@
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 16px;
-    display: flex;
-    max-width: 300px;
+    max-width: 288px;
     @include tablet {
       font-size: 20px;
       align-items: center;
+      // max-width: 322px;
+      margin: 0;
     }
+    // @media screen and (min-width: 900px) {}
     @include desktop {
       font-size: 22px;
       align-items: center;
       justify-content: center;
+      max-width: 510px;
     }
   }
 }
