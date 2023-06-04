@@ -7,6 +7,7 @@
     closeModalBtn2: document.querySelector('[contact-us-close]'),
     modal1: document.querySelector('[contact-us-container]'),
     modal2: document.querySelector('[contact-us-container]'),
+    modal3: document.querySelector('[contact-us-container]'),
   };
 
   refs.openModalBtn1.addEventListener('click', toggleModal1);
