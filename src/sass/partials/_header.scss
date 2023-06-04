@@ -40,7 +40,7 @@
     background-color: inherit;
     border: none;
 
-    &:last-of-type {
+    &--hidden {
       @include tablet {
         display: none;
       }
