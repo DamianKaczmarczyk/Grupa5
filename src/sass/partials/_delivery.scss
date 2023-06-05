@@ -54,13 +54,13 @@
   }
   &__txt {
     position: absolute;
-
+    margin-right: 24px;
     margin-left: 48px;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    max-width: 232px;
-    // max-width: ;
+    max-width: 380px;
+    // max-width: 232px;
     // top: 0px;
     @include tablet {
       font-size: 24px;
@@ -101,6 +101,6 @@
   @include desktop {
     margin-top: 69px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
   }
 }
