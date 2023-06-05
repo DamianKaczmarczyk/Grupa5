@@ -8,6 +8,7 @@
   z-index: 1;
   display: flex;
   transition: visibility 400ms linear, opacity 400ms linear;
+  z-index: 30;
 }
 .is-hidden {
   pointer-events: none;
