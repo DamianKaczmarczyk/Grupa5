@@ -7,7 +7,7 @@
   background-color: $background-color-bachdrop;
   z-index: 1;
   display: flex;
-  transition: visibility 1500ms linear, opacity 1500ms linear;
+  transition: visibility 400ms linear, opacity 400ms linear;
 }
 .is-hidden {
   pointer-events: none;
@@ -31,7 +31,7 @@
   text-align: center;
   z-index: 2;
 
-  transition: transform 1500ms linear;
+  transition: transform 400ms linear;
   transform: scale(1);
   &__btn--close {
     width: 18px;
