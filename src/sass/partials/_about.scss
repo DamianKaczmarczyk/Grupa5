@@ -1,51 +1,53 @@
 .about {
   &__title {
-    font-family: 'Montserrat';
-    font-style: normal;
+    font-family: $main-font;
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.2;
     text-transform: uppercase;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     display: flex;
     margin-bottom: 32px;
-  }
-  @include tablet {
-    &__title {
-      font-weight: 700;
+
+    @include tablet {
       font-size: 44px;
-      margin-bottom: 56px;
+      margin-bottom: 30px;
       align-items: center;
       display: flex;
-      margin-bottom: 56px;
+    }
+
+    @include desktop {
+      margin-bottom: 26px;
     }
   }
+
   &__wrapper {
+    margin-right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 14px;
+    max-width: 288px;
+
     @include tablet {
       display: flex;
       flex-direction: row;
       gap: 54px;
     }
+
     @include desktop {
       gap: 90px;
-
     }
   }
   &__text {
     font-size: 16px;
-    line-height: 1.2;
     margin-bottom: 16px;
-    max-width: 288px;
+
     @include tablet {
       font-size: 20px;
       align-items: center;
-       max-width: 322px;
+      max-width: 322px;
       margin: 0;
     }
     // @media screen and (min-width: 900px) {}
