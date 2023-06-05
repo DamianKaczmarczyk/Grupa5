@@ -16,19 +16,19 @@ button {
 a {
   text-decoration: none;
 }
+body {
+  font-family: $main-font;
+}
 .section {
-  padding: 60px 0;
+  padding-bottom: 60px;
   @include tablet {
-    padding: 100px 0;
-  }
-  @include desktop {
-    padding: 100px 0;
+    padding-bottom: 100px;
   }
 }
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  width: 100%;
+  // width: 100%;
   max-width: 480px;
   @include tablet {
     max-width: 768px;
