@@ -21,14 +21,26 @@
     font-size: 18px;
     line-height: 1.22;
     text-align: center;
-    margin-bottom: 24px;
+    margin: 14px 0 24px;
 
     @include tablet {
       font-size: 32px;
-      margin-bottom: 32px;
+      margin: 18px 0 32px;
+    }
+
+    @include desktop {
+      margin: 24px 0 32px;
     }
   }
   &-btn {
+    background: $color-btn;
+    border-radius: 38px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-light;
+    font-family: $main-font;
     padding: 8px 39.5px;
     font-size: 18px;
     line-height: 1.33;
@@ -41,17 +53,17 @@
   }
 }
 .slider {
-  margin: 32px 0 68px;
+  margin: 32px 0 4px;
   display: flex;
   justify-content: center;
   gap: 16px;
 
   @include tablet {
-    margin: 60px 0 87px;
+    margin: 60px 0 8px;
     gap: 32px;
   }
   @include desktop {
-    margin: 122px 0 103px;
+    margin: 60px 0 18px;
   }
 
   &__item {
@@ -61,6 +73,29 @@
       @include desktop {
         display: block;
       }
+    }
+  }
+  &__foto {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__directions {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+
+    @include tablet {
+      gap: 30px;
+    }
+  }
+  &__arrow {
+    width: 50px;
+    height: 50px;
+
+    @include tablet {
+      width: 61px;
+      height: 61px;
     }
   }
 }

@@ -4,15 +4,12 @@
     align-items: center;
     position: relative;
     justify-content: center;
-    width:288px;
-    height: 340px;
+    padding-top:27px;
     @include tablet {
-        width:720px;
-        height: 815px;
+        padding-top:90px;
     }
     @include desktop {
-        width:1232px;
-        height: 785px;
+        padding-top: 149px;
     }
     }
     &__title{
@@ -21,13 +18,15 @@
         font-size: 52px;
         font-family: $main-font;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         @include tablet {
             font-size: 120px;
+            bottom: 0;
         }
         @include desktop {
             display: block;
             font-size: 160px;
+            bottom: -60px;
         }
     }
     &__stitle{
@@ -36,9 +35,10 @@
         font-size: 52px;
         font-family: $main-font;
         position: absolute;
-        bottom: 0px;
+        bottom: -27px;
         @include tablet {
             font-size: 120px;
+            bottom:-90px;
         }
         @include desktop {
             display:none;
@@ -83,6 +83,26 @@
                 width: 166px;
                 height: 166px;
             }
+        }
+        &--mo{
+            display: block;
+            @media screen and (min-width: 768px) {
+            display:none;
+            }
+        }
+        &--tb{
+            display:none;
+            @media screen and (min-width: 768px) and (max-width: 1279.59px) {
+                display: block;
+            }
+
+        }
+        &--dt{
+            display:none;
+            @include desktop {
+                display:block;
+            }
+
         }
     }
 }
