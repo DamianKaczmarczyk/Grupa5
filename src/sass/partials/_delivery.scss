@@ -98,6 +98,7 @@
 
 .delivery-foto {
   margin-top: 35px;
+  object-fit: contain;
   @include tablet {
     margin-top: 40px;
   }
