@@ -1,24 +1,3 @@
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $background-color-bachdrop;
-  z-index: 1;
-  display: flex;
-  transition: visibility 400ms linear, opacity 400ms linear;
-  z-index: 30;
-}
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-
-  & .modal-follow {
-    transform: scale(0);
-  }
-}
 .modal-follow {
   position: absolute;
   width: 272px;
